@@ -5,17 +5,16 @@
 <html lang="vi">
 <head>
 	<meta charset="UTF-8" />
-	<title>Trang chủ | CaNhanWeb</title>
+	<title>Trang chủ</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/styles/site.css" />
 </head>
-<body>
+<body class="home-page">
 	<%@ include file="/WEB-INF/includes/nav.jspf" %>
 	<header class="hero">
 		<h1>Chào mừng đến với không gian học tập</h1>
-		<p class="lead">Tổng hợp các bài thực hành Servlet & JSP theo từng chương: biểu mẫu, session, cookie, database, JPA... Bạn có thể duyệt nhanh qua mục Bài tập hoặc xem thông tin cá nhân.</p>
 		<div class="grid">
 			<div class="card">
-				<span class="badge">NEW</span>
+				<span class="badge">1st</span>
 				<h3>Email List (Ch3 → Ch5)</h3>
 				<p>Form nhập và hiển thị thông tin người dùng, luyện xử lý POST/GET.</p>
 				<a class="more" href="${pageContext.request.contextPath}/baitap.jsp#email-list">Xem chi tiết →</a>

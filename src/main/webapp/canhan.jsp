@@ -9,29 +9,42 @@
   <title>Thông tin cá nhân | CaNhanWeb</title>
   <link rel="stylesheet" href="${ctx}/styles/site.css" />
 </head>
-<body>
+<body class="canhan-page">
   <%@ include file="/WEB-INF/includes/nav.jspf" %>
   <div class="profile">
-    <img src="https://via.placeholder.com/180x180.png?text=Avatar" alt="Avatar" />
+    <img src="assets/the3.jpg" alt="Avatar" />
     <section>
-      <h2>Xin chào, mình là Hoang 👋</h2>
-      <p>Lập trình viên đang luyện tập nền tảng Java Web: Servlets, JSP, JSTL, JDBC, Hibernate/JPA và các kỹ thuật quản lý session, cookie, validation, MVC cơ bản.</p>
-      <p>Các mục tiêu hiện tại:
-        <ul>
-          <li>Củng cố nền tảng Java EE cốt lõi.</li>
-          <li>Xây dựng thói quen dự án rõ ràng: cấu trúc thư mục, mapping chuẩn hóa.</li>
-          <li>Chuẩn bị bước chuyển sang Spring Boot sau khi nắm vững cơ bản.</li>
-        </ul>
-      </p>
+      <h2>
+      Nice to meet you, I'm Vu Duc Hoang from Vietnam👋
+      </h2>
+      <p>Data Engineer Student in UTE.</p>
+      <p>Cố gắng học nhiều thứ mới đều đều nhưng chưa thể tập trung thế mạnh vào một lĩnh vực😑.</p>
+      <h3>Kiến thức</h3>
+      <ul>
+        <li>Củng cố lập trình hướng đối tượng và mô hình 3 lớp ứng dụng website.</li>
+        <li>Nền tảng kiến thức C++, C#, T-SQL phục vụ xử lý dữ liệu.</li>
+        <li>Xây dựng các script Python crawl dữ liệu và xử lý.</li>
+        <li>Tạo biểu đồ trực quan hóa dữ liệu bằng Python, R, Excel.</li>
+        <li>Lắp ráp cơ bản về lập trình arduino ứng dụng trong IoT.</li>
+        <li>Desktop Support với Windows kiểm tra lưu lượng bất thường với Wireshark, Process explorer, TCPView,...</li>
+      </ul>
       <h3>Kỹ năng chính</h3>
       <ul class="list-links">
-        <li><a>Java</a></li><li><a>Servlet/JSP</a></li><li><a>JSTL</a></li><li><a>JDBC</a></li><li><a>Hibernate</a></li><li><a>HTML/CSS</a></li><li><a>Git</a></li>
+        <li><a>Python (crawl, Selenium)</a></li><li><a>Java</a></li><li><a>Servlet/JSP/JSTL</a></li><li><a>Hibernate/JPA</a></li><li><a>C++</a></li><li><a>C#</a></li><li><a>T-SQL</a></li><li><a>HTML/CSS</a></li><li><a>Git</a></li><li><a>Wireshark (cơ bản)</a></li><li><a>Desktop Support</a></li>
+      </ul>
+      <h3>Sở thích</h3>
+      <ul>
+        <li>Ẩm thực & khám phá văn hoá món ăn địa phương</li>
+        <li>Bánh ngọt & những chuyện thú vị</li>
+        <li>Đọc sách luyện logic, suy luận & trinh thám</li>
+        <li>Tìm hiểu về những công nghệ mới</li>
+        <li>Xem các kênh YouTube review ẩm thực around the world</li>
       </ul>
       <h3>Liên hệ</h3>
       <ul class="list-links">
-        <li><a href="mailto:email@example.com">Email</a></li>
-        <li><a target="_blank" href="https://github.com/">GitHub</a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:vdh.hoang06@gmail.com">Email</a></li>
+        <li><a target="_blank" href="https://github.com/hoang-vd">GitHub</a></li>
+        <li><a href="tel:0909244230">Điện thoại: 0909 244 230</a></li>
       </ul>
     </section>
   </div>

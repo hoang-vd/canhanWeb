@@ -23,8 +23,8 @@ public class MainServlet extends HttpServlet {
 	public void init() throws ServletException {
 		taskMap = new HashMap<>();
 		// Mapping keys -> internal paths (context-relative)
-		taskMap.put("chuong3_form", "/baitap_jsp/chuong3_index.html");
-		taskMap.put("chuong3_servlet", "/chuong3/emailList?action=join");
+		// taskMap.put("chuong3_form", "/baitap_jsp/chuong3_index.html");
+		// taskMap.put("chuong3_servlet", "/chuong3/emailList?action=join");
 		taskMap.put("chuong4_servlet", "/chuong4/emailList?action=join");
 		taskMap.put("chuong5_servlet", "/chuong5/emailList?action=join");
 		taskMap.put("chuong6p1", "/chuong6p1/emailList?action=join");
