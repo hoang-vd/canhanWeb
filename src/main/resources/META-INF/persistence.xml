@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="emailListPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Use JNDI DataSource configured in context.xml -->
+        <non-jta-data-source>java:comp/env/jdbc/murach</non-jta-data-source>
+
+        <class>murach.business.User</class>
+
+        <properties>
+            <!-- Hibernate dialect for PostgreSQL -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
+            <!-- Show SQL for debugging (disable in production) -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- Force Hibernate to quote all identifiers so PascalCase columns are preserved -->
+            <property name="hibernate.globally_quoted_identifiers" value="true"/>
+            <!-- Validate schema (can switch to update/create-drop for dev) -->
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+        </properties>
+    </persistence-unit>
+</persistence>
