@@ -49,5 +49,22 @@
     </section>
   </div>
   <footer class="site-footer">© <script>document.write(new Date().getFullYear())</script> Hoang • Trang cá nhân học tập</footer>
+  <section class="contact-card" id="contact">
+    <h3>Gửi lời nhắn</h3>
+    <form id="contactForm" action="${ctx}/contact" method="post">
+      <div class="field">
+        <label>Họ tên</label>
+        <input type="text" name="name" required maxlength="80" placeholder="Tên của bạn" />
+      </div>
+      <div class="field">
+        <label>Nội dung</label>
+        <textarea name="comment" rows="4" required maxlength="800" placeholder="Điều bạn muốn chia sẻ..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Gửi</button>
+      <p class="status" id="contactStatus"></p>
+    </form>
+  </section>
+  <script>window.contextPath='${ctx}';</script>
+  <script src="${ctx}/inbox.js"></script>
 </body>
 </html>
