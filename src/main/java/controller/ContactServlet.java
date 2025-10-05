@@ -43,7 +43,7 @@ public class ContactServlet extends HttpServlet {
 						htmlBody
 				);
 				if (sent) {
-					writeJson(resp, 200, "Gửi thành công! Cảm ơn bạn.");
+					writeJson(resp, 200, "Gửi thành công! Thank you.");
 				} else {
 					writeJson(resp, 502, "Không gửi được email (kiểm tra RESEND_API_KEY hoặc quota).");
 				}
