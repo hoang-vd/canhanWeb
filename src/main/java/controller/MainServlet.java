@@ -35,6 +35,7 @@ public class MainServlet extends HttpServlet {
 		// taskMap.put("chuong9p2", "/baitap_jsp/chuong9p2_index.jsp");
 		taskMap.put("chuong12_sql", "/baitap_jsp/chuong12p1_index.jsp");
 		taskMap.put("chuong13_jpa", "/chuong13/emailList?action=join");
+		taskMap.put("chuong13_jpa_ex2", "/chuong13ex2/users?action=list_users");
 	}
 
 	@Override

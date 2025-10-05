@@ -31,7 +31,7 @@
 			</div>
 			<div class="card">
 				<h3>JPA Email List</h3>
-				<p>Lưu người dùng với Hibernate/JPA trong chương 13.</p>
+				<p>Thao tác với Hibernate/JPA trong chương 13 (dùng Supabase).</p>
 				<a class="more" href="${pageContext.request.contextPath}/baitap.jsp#jpa">Truy cập →</a>
 			</div>
 		</div>

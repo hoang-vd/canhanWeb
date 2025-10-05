@@ -31,16 +31,17 @@
   <!-- <li><a target="_blank" href="${ctx}/go?task=chuong9p2">Ch9p2 Cart nâng cao</a></li> -->
     </ul>
 
-    <h2 id="sql">Chương 12: SQL Gateway</h2>
+    <h2 id="sql">Chương 12: SQL Gateway (Data from Supabase)</h2>
     <ul class="list-links">
-  <li><a target="_blank" href="${ctx}/go?task=chuong12_sql">SQL Gateway UI</a></li>
+  <li><a target="_blank" href="${ctx}/go?task=chuong12_sql">SQL Gateway</a></li>
   <!-- <li><a target="_blank" href="${ctx}/go?task=chuong12_sql">Servlet thực thi</a></li> -->
     </ul>
 
-    <h2 id="jpa">Chương 13: JPA Email List</h2>
+    <h2 id="jpa">Chương 13: JPA Email List (Data from Supabase)</h2>
     <ul class="list-links">
   <li><a target="_blank" href="${ctx}/go?task=chuong13_jpa">Form JPA</a></li>
   <!-- <li><a target="_blank" href="${ctx}/go?task=chuong13_jpa">Servlet JPA</a></li> -->
+  <li><a target="_blank" href="${ctx}/go?task=chuong13_jpa_ex2">Quản lý User JPA</a></li>
     </ul>
   </main>
   <footer class="site-footer">© <script>document.write(new Date().getFullYear())</script> CaNhanWeb • Bài tập JSP/Servlet</footer>

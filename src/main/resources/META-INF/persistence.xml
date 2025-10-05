@@ -22,4 +22,19 @@
             <property name="hibernate.hbm2ddl.auto" value="validate"/>
         </properties>
     </persistence-unit>
+
+    <!-- Persistence unit for Exercise 13-2 User Admin (Supabase via same JNDI DataSource) -->
+    <persistence-unit name="userAdminPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Reuse the JNDI DataSource defined in META-INF/context.xml -->
+        <non-jta-data-source>java:comp/env/jdbc/murach</non-jta-data-source>
+        <class>model.chuong13ex2_User</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.globally_quoted_identifiers" value="true"/>
+        </properties>
+    </persistence-unit>
 </persistence>

@@ -22,4 +22,26 @@
             <property name="hibernate.hbm2ddl.auto" value="validate"/>
         </properties>
     </persistence-unit>
+
+    <!-- Persistence unit for Exercise 13-2 User Admin (Supabase) -->
+    <persistence-unit name="userAdminPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Direct JDBC properties (override with env/system props in deployment) -->
+        <class>model.chuong13ex2_User</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <!-- Replace HOST, DB, USER, PASS with environment or context.xml if preferred -->
+            <property name="javax.persistence.jdbc.url" value="${SUPABASE_JDBC_URL}"/>
+            <property name="javax.persistence.jdbc.user" value="${SUPABASE_DB_USER}"/>
+            <property name="javax.persistence.jdbc.password" value="${SUPABASE_DB_PASSWORD}"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <!-- Supabase often requires SSL -->
+            <property name="hibernate.connection.provider_disables_autocommit" value="true"/>
+            <property name="hibernate.connection.autocommit" value="false"/>
+            <!-- If needing SSL params, embed in JDBC URL or use below custom props -->
+        </properties>
+    </persistence-unit>
 </persistence>
